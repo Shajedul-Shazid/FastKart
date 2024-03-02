@@ -6,7 +6,7 @@
 }
 
 .container {   
-    width: 90%;
+    width: 83%;
     margin: 0 auto;
 }
 
@@ -20,20 +20,21 @@
     padding-top: 25px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 18px;
 
 }
 
-.locationBtn {
-    font-size: 26px;
+.location {
+    font-size: 16px;
     color: #D99F46;
-    padding: 10px;
+    padding: 7px;
     border: 1px solid #ececec;
     background-color: #FFFFFF;
 }
 
 .searchBtn {
     padding: 14px;
-    font-size: 26px;
+    font-size: 14px;
     border: 1px solid #ececec;
     background-color: #FFFFFF;
     /* width: 50%; */
@@ -41,10 +42,9 @@
 }
 
 .search-icon {
-    /* width: 40px;
-    height: 40px; */   
-    padding: 20px;
-    background-color: #D99F46;
+	padding: 15px;
+	background-color: #D99F46;
+	margin-left: -4px;
 }
 
 .icon .size {
@@ -66,23 +66,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 11px;
 }
-
 .cat-btn {
-    padding: 20px;
-    font-size: 20px;
-    background-color: #000;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
+	font-size: 18px;
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 6px;
+	padding: 18px 24px;
+	cursor: pointer;
+	border: 0;
 }
 
 .dealBtn {
-    padding: 20px;
-    font-size: 20px;
-    background-color: #FAF4EB;
-    border: none;
-    border-radius: 10px;
+	font-size: 20px;
+	background-color: #FAF4EB;
+	border: none;
+	border-radius: 10px;
+	padding: 15px 22px;
 }
 
 .navbar ul {
@@ -161,7 +163,7 @@
     font-weight: 400;
     border: none;
     text-decoration: none;
-    padding-top: 29px;
+    margin-top: 29px;
 }
 
 .exc-offer {
@@ -200,10 +202,12 @@
     background-image: url("images/cashback.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
     text-align: center;
     padding: 10px;
     color: #fff;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 .cashback-h3 {
@@ -267,17 +271,20 @@
    grid-template-columns: 1fr 1fr 1fr 1fr;
    grid-gap: 10px; */
    margin-top: 51px;
-   display: flex;
+   /* display: flex; */
+   display: grid;
+   grid-template-columns: 70% 30%;
    gap: 10px;
 }
 .item img{
     width: 100%;
+    height: 191px;
 }
 
-.left {
-    width: 75%;
+/* .left {
+    width: 70%;
     
-}
+} */
 
 .left-grid {
     display: grid;
@@ -285,9 +292,9 @@
     gap: 10px;
 }
 
-.right {
-    width: 25%;
-}
+/* .right {
+    width: 30%;
+} */
 
 /* menu category  */
 
@@ -328,6 +335,7 @@
     padding: 20px 30px;
     width: 100%;
     margin-top: 49px;
+    border-radius: 5px;
 }
 
 .save-items-images {
@@ -378,8 +386,7 @@
 .items-h6 {
     color: #222222;
     font-size: 13.5833px;
-    font-weight: 600;
-    width: 60%;
+    font-weight: 600;    
     line-height: 1.2;
     margin-bottom: 10px;
 }
@@ -406,6 +413,9 @@
 .delicious-food {
     background-image: url("images/delicious.jpg");
     margin-top: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
 
 }
 
@@ -413,13 +423,14 @@
 
 .limited-time-offer {
     background-image: url("images/limited-time-offer.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     text-align: center;
     margin-top: 47px;
     margin-bottom: 47px;
     padding: 50px;
     border-radius: 10px;
+    background-repeat: no-repeat;
 }
 
 .offer-items {
@@ -452,9 +463,12 @@
 
 .link-h3 {
     color: #4A5568;
-    font-size: 24.8px;
-    font-family: "Pacifico", cursive;
+    font-size: 24.8px;   
     font-weight: 400;
+}
+
+.text-pacifico {
+    font-family: "Pacifico", cursive;
 }
 
 .fa-brands {
@@ -474,16 +488,6 @@
     font-size: 14px;
 }
 
-/* top-selling */
-
-.top-selling {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-}
-.border-bottom {
-    border-bottom: 1px solid red;
-}
 
 /* newsletter */
 
@@ -517,3 +521,755 @@
     font-weight: 400;
 
 }
+
+/* seafood special brand */
+
+h3 {
+    font-size: calc(16px + 4*(100vw - 320px)/1600);
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h6 {
+    font-size: calc(13px + 1*(100vw - 320px)/1600);
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 400;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.theme-color {
+    color: #d99f46;
+}
+
+.right-img .brand-name {
+    font-weight: bold;
+    background-color: #d99f46;
+    color: #fff;
+    padding: calc(6px + 4*(100vw - 320px)/1600) calc(8px + 2*(100vw - 320px)/1600);
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 50%;
+}
+
+span {
+    display: inline-block;
+}
+
+.right-img h3 {
+    font-size: calc(27px + 7*(100vw - 320px)/1600);
+}
+
+.brand-name::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: calc(3px + 4*(100vw - 320px)/1600);
+    left: calc(3px + 3*(100vw - 320px)/1600);
+    border: calc(1px + 1*(100vw - 320px)/1600) solid #222;
+    z-index: -1;
+}
+
+.text-content {
+    color: #4a5568;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.lh-lg {
+    line-height: 2 !important;
+}
+
+.right-img .banner-detail-box-2 {
+    padding: 7px 0 7px 17px;
+}
+
+.banner-detail-box {
+    position: relative;
+}
+
+.banner-detail-box::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: -10px;
+    background-color: #d99f46;
+}
+
+.banner-detail-box-2::before {
+    width: 5px;
+    border-radius: 50px;
+    left: 0;
+}
+
+.right-img h4 {
+    font-weight: 600;
+    font-size: calc(17px + 4*(100vw - 320px)/1600);
+    color: #222;
+}
+
+.right-img h2 {
+    font-size: calc(42px + 17*(100vw - 1199px)/721);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: calc(17px + 1*(100vw - 320px)/1600);
+    line-height: 1.2;
+    margin: 0;
+    font-weight: 400;
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important;
+}
+
+.btn-md {
+    padding: 10px 20px;
+    font-size: 15.6;
+    font-weight: 500;
+}
+
+.theme-bg-color {
+    background-color: #d99f46;
+}
+
+.right-img .btn {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15.6px;
+    border-radius: 5px;
+    
+}
+
+
+.mend-auto {
+    margin-right: auto !important;
+    text-align: left;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+}
+
+.offer-btn {
+    padding-bottom: 237px;
+}
+
+.expire-btn .btn {
+    border: none;
+    background-color: #d99f46;
+    padding: 15px 25px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.fa-clock {
+    padding-right: 8px;
+}
+
+.save-text-section h3 {
+    font-size: 26.8px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.delicious-text {
+    padding: 20px 30px;
+}
+
+.delicious-text {
+    padding-bottom: 202px;
+}
+
+.delicious-food h3 {
+    color: #222222;
+    font-size: 32.6px;
+    font-weight: 500;
+}
+
+.bread-color {
+    color: #D99F46;
+}
+
+.delicious-food p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.delicious-food .btn {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15.6px;
+    border-radius: 5px;
+    
+}
+
+/* customer-comment */
+
+.customer-comment {
+    padding: 20px 30px; 
+    margin-top: 47px; 
+    background: linear-gradient(136.8deg, #f6f5f2 17.01%, #fdf7f0 93.97%);
+    border-radius: 5px;
+}
+
+.customer-comment h3 {
+    margin-bottom: 41px;    
+    position: relative;
+}
+
+.customer-comment h3::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color:  #DFAE63;
+}
+
+.customer-comment h5 {
+    font-size: 16px;
+    margin-bottom: 23px;
+}
+
+.customer-comment p {
+    font-size: 14px;
+    line-height: 27px;
+    color: #4a5568;
+    margin-bottom: 24px;
+}
+
+.review-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.review-profile-img {
+    height: 70px;
+    width: 70px;   
+}
+
+.review-profile-text {
+    margin-bottom: 24px;
+    margin-top: 26px;
+}
+
+.review-profile-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.review-profile-text h5 {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.review-profile-text h6 {
+    color:  #4A5568;
+    font-size: 16px;
+   
+}
+
+.creamy-chocolate {
+    margin-top: 49px;
+}
+
+ .title {
+    color: #222222;
+    font-size: 26.8px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.creamy-chocolate-img img {
+    width: 123px;
+    height: 120px;
+}
+
+.creamy-chocolate-text h5 {
+    display: inline-block;
+    color: #222222;
+    font-size: 15.8px;
+    font-weight: 500;
+
+}
+
+.creamy-chocolate-text h6 {
+    color:  #222222;
+    font-size: 15.6px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+
+.chocolate {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.red {
+    color:  #FF4F4F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.all-cake {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+ /* Your Daily Staples  */
+
+ .daily-staples {
+    margin-top: 51px;
+ }
+
+.top-selling {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 43px;
+}
+
+.top-selling h3 {
+    border-bottom: 1px solid #e0e2e7;
+    padding-bottom: 23px;
+    position: relative
+}
+
+.top-selling h3::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #D99F46;
+}
+
+.top-selling .heading {
+    color: #222222;
+    font-size: 21.4px;
+    font-weight: 600;
+}
+#icons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rating-img {
+    width: 20px;
+    margin: 5px 0;
+}
+.stock{
+    color: blue;
+}
+.grand-text-h5 {
+     font-size: 15.8px;
+     font-weight: 600;
+}
+
+.grand-celebration {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 41px;
+}
+
+.grand {
+    margin-top: 51px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grand-text h6 {
+    color:  #D99F46;
+    font-size: 13.8px;
+    font-weight: 600;
+}
+
+.rating-34{
+    color: #4A5568;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.grand-img img {
+    width: 96px;
+    height: 96px;
+}
+
+.input-box {
+    background-color: #ffffff;    
+    margin-top: 21px;
+    padding: 4px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+
+}
+
+.color-i {
+    color: #D99F46;
+    background-color: #FAF4EB;
+    font-size: 32px;
+    font-weight: 900;
+    margin-right: 10px;
+    padding: 8px;
+}
+
+.fa-solid {
+    color: #ffffff
+}
+
+.input-mail {
+    border: none;
+}
+
+.subscribe-btn {
+    padding: 20px 32px;
+    background-color: #D99F46;
+    border: 0;
+    font-size: 14px;
+    color: #fff;
+    font-family: inherit;
+    border-radius: 5px;    
+}
+
+.fresh-products {
+    display: grid;
+    grid-template-columns: 55% 39%;
+    gap: 70px;
+    padding-bottom: 48px;
+    border-bottom: 1px dashed #c1c1c1;
+    margin-bottom: 52px;
+}
+
+.fifty-percent-fresh {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.fifty-percent-mega {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fresh {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-right: 20px;     
+}
+    
+.delivery {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.mega {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.market {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.fresh-products h5 {
+    color: #222;
+    font-size: 13.8px;
+    font-weight: 500;    
+}
+
+.border-right {
+    border-right: 1px dashed #c1c1c1;
+    padding-right: 19px;
+}
+
+.logo-publish {
+     width: 149px;
+     margin-bottom: 27px; 
+}
+
+.publishing {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;    
+    gap: 41px;
+    color: #4a5568;
+    padding-bottom: 57px;
+    border-bottom: 1px dashed #c1c1c1;
+    margin-bottom: 32px;
+}
+
+.publishing-graphic-design p {
+    font-size: 15px;
+    line-height: 27px;
+    width: 80%;
+    margin-bottom: 22px;
+}
+
+.publishing-graphic-design ul li {
+    list-style: none;
+    margin-bottom: 14px;
+    font-size: 15.6px;
+}
+.fa-regular {
+    margin-right: 10px;
+}
+
+.publishing h4 {
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.publishing ul li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.hotline {
+    border-bottom: 1px dashed #c1c1c1;
+}
+
+.hotline h5 {
+    padding-bottom: 25px;
+}
+
+.email {
+    border-bottom: 1px dashed #c1c1c1;
+    margin-bottom: 29px;
+} 
+
+.email h5 {
+    padding-bottom: 25px;
+}
+
+
+ .download-app h5 {
+    margin-bottom: 8px;
+    font-size: 15.8px;
+ }
+
+ .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    gap: 247px;
+    margin-bottom: 30px;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 10px;
+    margin-left: 73px;
+}
+
+
+/* .divide{
+    width: 83%;
+    margin: 0 auto;  
+    padding-top: 55px;   
+} */
+
+/* .footer{
+    width: 83%;
+    margin: 0 auto;  
+} */
+/* responsive for device size */
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    input.searchBtn {
+        display: none;
+    }
+    span.location {
+        display: none;
+    }
+    button.dealBtn {
+        display: none;
+    }
+    button.cat-btn {
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+    i.fa-solid.fa-magnifying-glass.search-icon {
+        display: none;
+    }
+    section.menu-category {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    h3.cashback-h3 {
+        padding-top: 10px;
+        font-size: 23.5px;
+    }
+    
+    h6.cashback-h6 {
+        margin-bottom: 16px;
+    }
+    section.grand-celebration {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .top-selling {
+        display: grid;
+        gap: 43px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .rated {
+        display: none;
+    }
+    .added {
+        display: none;
+    }
+    .none {
+        display: none;
+    }
+    .newsletter-text {
+        padding: 38px 192px 12px 65px;
+       
+    }
+    .input-box {
+            width: 100%;    
+            margin-bottom: 25px; 
+            padding: 2px 3px;  
+    }
+    .subscribe-btn {
+        padding: 14px 18px;
+    }
+    .newsletter-h6 {
+        margin-bottom: 8px;
+        font-size: 23.8336px;
+    }
+    p.newsletter-p {
+        font-size: 16.6px;
+    }
+    input.input-mail {
+        margin-right: 50px;
+    }
+    i.fa-regular.fa-envelope.color-i {
+        font-size: 16px;
+    }
+    .footer {
+        gap: 2px;
+    }
+    .fresh-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 17px;
+    }
+    .border-right {        
+        padding-right: 62px;
+    }
+    .market {
+        margin-left: 21px;
+    }
+    h5.border-right.padding-discounts {
+        padding-right: 57px;
+    }
+    .publishing {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section.footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer-icon {       
+        margin-left: -71px;
+    }
+    .all-offer {
+      grid-template-columns: 1fr 1fr;
+    }
+    .bakery-sweet {
+        order: 2;
+    }
+    .fresh-bread {
+        order: 1;
+    }
+    .handmet-sweet {
+       order: 3;
+       grid-column: 1 / span 2; 
+       margin-top: 30px;
+       padding-bottom: 191px;
+       padding-top: 191px;
+    }
+    .limited-time-offer {
+        background-size: cover;
+
+    }
+    .sale-h2 {
+       font-size: 14.4px;
+    }
+    .limited-h3 {
+        font-size: 10.8px;
+    }
+    .link-h3 {
+        font-size: 15px;
+    }
+    .offer-items {
+        padding-top: 2px;
+        padding-bottom: 15px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
