@@ -117,6 +117,7 @@
     /* background-position: center; */
     padding-top: 55px;
     padding-left: 29px;
+    padding-right: 17px;
 }
 
 .handmet-sweet {
@@ -124,6 +125,8 @@
     background-size: cover;
     padding-top: 51px;
     padding-left: 20px;
+    padding-right: 17px;
+    border-radius: 5px;
 }
 
 .bakery-sweet {
@@ -131,6 +134,7 @@
     background-size: cover;
     padding-top: 55px;
     padding-left: 29px;
+    padding-right: 17px;
 }
 
 .red {
@@ -1098,19 +1102,19 @@ h4 {
     gap: 10px;
     margin-left: 73px;
 }
-
-
-/* .divide{
-    width: 83%;
-    margin: 0 auto;  
-    padding-top: 55px;   
-} */
-
-/* .footer{
-    width: 83%;
-    margin: 0 auto;  
-} */
-/* responsive for device size */
+.new_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.new_item img{
+    width: 100%;
+    height: 191px;
+}
+ 
+.fa-solid.fa-plus.plus {
+	color: #D99F46;
+}
 
 @media screen and (max-width: 900px) {
     .navbar {
@@ -1207,7 +1211,16 @@ h4 {
     }
     .publishing {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .publishing-graphic-design {
+        grid-column: 2 span / 2 span;
+    }
+    .cat-footer {
+        grid-column: 2 span / 2 span;
+    }
+    .contact-us{
+        grid-column: 2 span / 2 span;
     }
     section.footer {
         display: flex;
@@ -1223,10 +1236,10 @@ h4 {
       grid-template-columns: 1fr 1fr;
     }
     .bakery-sweet {
-        order: 2;
+        order: 1;
     }
     .fresh-bread {
-        order: 1;
+        order: 2;
     }
     .handmet-sweet {
        order: 3;
@@ -1252,11 +1265,137 @@ h4 {
         padding-top: 2px;
         padding-bottom: 15px;
     }
-
+    .new_item {
+        grid-template-columns: 1fr 1fr;
+    }
+    .right {
+        display: none;
+    }
+    .item {
+        grid-template-columns: 100%;
+    }
+    .save-items-images {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .all-cake {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-offer {
+        grid-template-rows: repeat(1, 492px);
+    } 
+    .handmet-sweet {
+        padding-top: 180px;
+    }
+    .save-text-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
   }
 
 
+  @media screen and (max-width: 600px) {
+    .fresh-bread {
+        display: none;
+    }
+    .bakery-sweet {
+        display: none;
+    }
+    .handmet-sweet {
+        padding-top: 84px;
+    }
+    section.menu-category {
+        grid-template-columns: 1fr 1fr;
+    }
+    .handmet-sweet {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .handmade-h3 {
+        font-size: 20.6px;
+        padding-bottom: 0px;
+    }
+    .handmet-sweet {
+        padding-top: 56px;
+    }
+    .shopmiddle-btn {
+        padding: 10px 12px;
+    }
+    .para-offer {
+        margin-bottom: 15px;
+    }
+    .new_item {
+        grid-template-columns: 1fr;
+    }
+    .save-items-images {
+        grid-template-columns: 1fr 1fr;
+    }
+    .all-cake {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.grand-celebration {
+        grid-template-columns: 1fr;
+    }
+    .publishing {
+        grid-template-columns: 1fr;
+    }
+    .fresh-products {
+        display: none;
+    }
+    .help-center {
+        grid-column: 2 span / 2 span;
+    }
+    .products {
+        display: none;
+    }
+    .newsletter-text {
+        padding: 45px 3px 15px 8px;
+    }
+    .subscribe-btn {
+        padding: 1px 3px;
+    }
+    .limited-time-offer {     
+        background-size: contain;
+        background-position: center;
+    }
+    .super-h2 {
+        font-size:20px;
+    }
+    .link-h3 {
+        font-size: 16px;
+    }
+    .limited-time-offer {
+        background-size: cover;
+    }
+    .all-offer {
+        grid-template-rows: repeat(1, 326px);
+    }
+    .none {
+        display: none;
+    }
+    .grand {
+        margin-top: 0;
+    }
+    .grand-celebration {
+        gap: 10px;
+    }
+    .margin-top {
+        margin-top: 40px;
+    }
+    .fa-solid.fa-plus.plus {
+        display: none;
+    }
+    h3.cashback-h3 {
+        font-size: 20.66px;
+    }
+    .cashback {
+        padding: 3px;
+    }
+    .cashback-h6 {
+        font-size: 16.733px;
+    }
 
+  }
 
 
 
